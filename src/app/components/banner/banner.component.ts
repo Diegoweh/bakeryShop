@@ -12,11 +12,7 @@ import { Banner } from 'src/app/interfaces/banner.interface';
 export class BannerComponent  implements OnInit {
 
   swiperModules = [IonicSlides];
-  bannerImages?: any[] = [
-    { id: '1', banner: 'assets/banners/1.webp', active: true, restaurant_id: '1' },
-    { id: '2', banner: 'assets/banners/2.webp', active: true, },
-    { id: '3', banner: 'assets/banners/3.webp', active: true, },
-  ]
+  bannerImages = input<Banner[]>([]);
 
   constructor() { }
 
