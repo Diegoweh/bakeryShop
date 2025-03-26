@@ -43,12 +43,24 @@
 </ion-header>
 
 <ion-content>
-  <app-list-heading heading="Special Offers">
-  </app-list-heading>
-  <app-banner [bannerImages]="banners()" />  
+  <div class="container">
+    <app-list-heading heading="Special Offers">
+    </app-list-heading>
+    <app-banner [bannerImages]="banners()" />  
+  
+    @if(categories().length > 0) {
+      <app-list-heading heading="Categories"></app-list-heading>
+      <app-categories [categories]="categories()" />
+    }
 
-  @if(categories().length > 0) {
-    <app-list-heading heading="Categories"></app-list-heading>
-    <app-categories [categories]="categories()" />
-  }
+    @if(products().length > 0) {
+
+      <app-list-heading heading="Featured Products"></app-list-heading>
+      <app-product-list-horizontal
+        [products]="products()"
+      ></app-product-list-horizontal>
+  
+      }
+
+  </div>
 </ion-content>

@@ -143,6 +143,7 @@ export const products: Product[] = [
     category_id: 3,
     seller_id: 2,
     default_price: 10,
+    cut_price: 15,
     varieties: [
       {
         id: 4,

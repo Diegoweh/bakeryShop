@@ -13,13 +13,14 @@ import { BannerService } from 'src/app/services/banner/banner.service';
 import { CategoryService } from 'src/app/services/category/category.service';
 import { ProductService } from 'src/app/services/product/product.service';
 import { CategoriesComponent } from 'src/app/components/categories/categories.component';
+import { ProductListHorizontalComponent } from 'src/app/components/product-list-horizontal/product-list-horizontal.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [IonRow, IonCol, IonText, IonButton, IonIcon, IonLabel, IonItem, IonContent, IonHeader, IonToolbar, CommonModule, FormsModule, IonSearchbar, ListHeadingComponent, BannerComponent, CategoriesComponent]
+  imports: [IonRow, IonCol, IonText, IonButton, IonIcon, IonLabel, IonItem, IonContent, IonHeader, IonToolbar, CommonModule, FormsModule, IonSearchbar, ListHeadingComponent, BannerComponent, CategoriesComponent, ProductListHorizontalComponent]
 })
 export class HomePage implements OnInit {
 
